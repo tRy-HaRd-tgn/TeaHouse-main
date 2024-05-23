@@ -1,0 +1,340 @@
+p{
+    font-family: "Istok Web";
+}
+.flex
+{
+    display: flex;
+}
+.disable 
+{
+    display:  none !important;
+    transition: 0.5s;
+}
+.color
+{
+    color: #60A79F;
+}
+.reload
+{
+    width: calc( (100vw - 35rem)/3 * 0.2 + 1.5rem);
+    height: calc( (100vh - 15rem)/5 * 0.1 + 1.5rem);
+}
+textarea 
+{
+    resize: none;
+    outline: none ;
+}
+.Main_App_leftColumn_p
+{
+    font-size: calc( (100vw - 60rem)/50 * 0.5 + 1rem);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.Main_App_container
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: #EEFFFD;
+}
+.Main_App_leftColumn_user_img
+{
+    width: calc( (100vw - 5rem)/14 * 0.5 + 1rem);
+    height: calc( (100vw - 5rem)/14 * 0.5 + 1rem);
+}
+.Main_App_leftColumn
+{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}
+.Main_App_leftColumn_div
+{
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.Main_App_leftColumn_user
+{
+    display: flex;
+    cursor: pointer;
+    margin-bottom:10vh;
+}
+.Main_App_leftColumn_user_p
+{
+    font-size: calc( (100vw - 60rem)/50 * 0.5 + 1rem);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.Main_App_leftColumn_textToGesture
+{
+    cursor: pointer;
+    
+}
+.Main_App_leftColumn_gestureToText
+{
+    cursor: pointer;
+    
+}
+.Main_App_leftColumn_favorites
+{
+    cursor: pointer;
+}
+.Main_App_leftColumn_articles
+{
+
+    cursor: pointer;
+    
+}
+.Main_App_leftColumn_block_img
+{
+    margin-right: 10px;
+    width: calc( (100vw - 5rem)/25 * 0.5 + 1rem);
+    height: calc( (100vw - 5rem)/25 * 0.5 + 1rem);
+}
+
+.Main_App_rightColumn
+{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Main_App_rightColumn_img
+{
+    width: calc( (100vw - 5rem)/5 * 0.5 + 1rem);
+    height: calc( (100vw - 5rem)/5 * 0.5 + 1rem);
+}
+.Main_App_rightColumn_block_gestureToText
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Main_App_rightColumn_block_gestureToText_obligation
+{
+    border: 1px solid black;
+    border-radius: 15px;
+    width: calc( (100vw - 5rem)/2 * 0.5 + 1rem);
+    height: calc( (100vw - 5rem)/2 * 0.5 + 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Main_App_rightColumn_block_gestureToText_obligation_img
+{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.Main_App_rightColumn_block_gestureToText_btn
+{
+    width: calc( (100vw - 5rem)/2 * 0.5 + 1rem);
+    height: calc( (100vw - 5rem)/5 * 0.1 + 1rem);
+    border-radius: 25px;
+    border: 1px solid white;
+    background: #FFF;
+    color: #2A464E;
+    text-align: center;
+    font-family: "Istok Web";
+    font-size: calc( (100vw - 50rem)/55 * 0.5 + 1rem) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+.record_stop
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc( (100vw - 5rem)/2 * 0.5 + 1rem);
+    height: calc( (100vw - 5rem)/4 * 0.1 + 1rem);
+    margin-top: 5px;
+    border-radius: 20px;
+    border: 2px solid #AF1414;
+    background: #B01414;
+    cursor: pointer;
+}
+.record_pause
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc( (100vw - 5rem)/2 * 0.5 + 1rem);
+    height: calc( (100vw - 5rem)/4 * 0.1 + 1rem);
+    margin-top: 5px;
+    border-radius: 20px;
+    border: 2px solid #AF1414;
+    background: #FFF;
+    cursor: pointer;
+}
+
+
+.record_stop_svg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc( (100vw - 5rem)/4 * 0.09 + 1rem);
+}
+.record_stop_svg_circle
+{
+    height: calc( (100vw - 5rem)/4 * 0.09 + 1rem); 
+}
+.record_pause_svg
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.record_pause_svg_circle
+{
+    height: calc( (100vw - 5rem)/4 * 0.09 + 1rem);
+}
+
+
+
+
+.Main_App_rightColumn_block_textToGesture
+{
+    width: calc( (100vw - 5rem)/2 * 0.8 + 1rem);
+    height: 35vh;
+}
+
+.Main_App_rightColumn_block_textToGesture_form_textarea
+{
+    width: calc( (100vw - 5rem)/2 * 0.7 + 1rem);    
+    height: 25vh;
+    border-radius: 25px;
+    border: 2px solid #1F333E;
+    background: #1F333E;
+    color: rgba(255, 255, 255, 0.25);
+    text-align: center;
+    font-family: "Istok Web";
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+}
+.Main_App_rightColumn_block_textToGesture_form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Main_App_rightColumn_block_textToGesture_div_textarea
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc( (100vw - 5rem)/2 * 0.8 + 1rem);
+    height: 33vh;
+    border-radius: 25px;
+    border: 2px solid #1F333E;
+    background: #1F333E;
+}
+.Main_App_rightColumn_block_textToGesture_form_textarea::placeholder
+{
+    text-align: center;
+}
+.Main_App_rightColumn_block_textToGesture_form_btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: #FFF;
+    width: calc( (100vw - 5rem)/2 * 0.8 + 1.1rem);
+    height: calc( (100vh - 15rem)/3 * 0.2 + 1.5rem) !important;
+    color: #2A464E;
+    text-align: center;
+    font-family: "Istok Web";
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem) !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+.Main_App_rightColumn_block_gestureToText_result
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc( (100vw - 5rem)/2 * 0.8 + 1rem);
+    height: 33vh;
+    border-radius: 25px;
+    border: 2px solid #2A464E;
+    background: #60A79F;
+}
+.Main_App_rightColumn_block_gestureToText_result_p
+{
+    color: rgba(255, 255, 255, 0.75);
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem) !important;
+    height: 33vh;
+}
+.Main_App_rightColumn_block_textToGesture_result
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: calc( (100vw - 55rem)/2 * 0.8 + 1rem);
+    height: calc( (100vh - 5rem)/2 * 0.9 + 1rem);
+    border-radius: 25px;
+    border: 2px solid #1F333E;
+    background: #1F333E;
+}
+.Main_App_rightColumn_block_gestureToText_result_div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc( (100vw - 55rem)/2 * 0.8 + 1rem);
+    height: calc( (100vh - 15rem)/1 * 0.5 + 1rem);
+}
+.Main_App_rightColumn_block_gestureToText_form_btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: #FFF;
+    width: calc( (100vw - 55rem)/2 * 0.8 + 1rem);
+    height: calc( (100vh - 15rem)/2 * 0.2 + 1.5rem) !important;
+    color: #2A464E;
+    text-align: center;
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem) !important;
+    cursor: pointer;
+}
+
+.Main_App_rightColumn_block_favorites
+{
+    width: calc( (100vw - 5rem)/2 * 0.8 + 1rem);
+    height: 35vh;
+    border-radius: 25px;
+    border: 2px solid #1F333E;
+    background: #1F333E;
+}
+
+

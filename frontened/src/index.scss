@@ -1,0 +1,241 @@
+body{
+    height: 100%;
+    margin: 0;
+    
+}
+textarea {
+    resize: none;
+    outline: none ;
+ }
+ .pointer
+ {
+    cursor: pointer;
+ }
+ p
+ {
+    font-family: monospace;
+ }
+//themes
+#dark{
+    background-color: #0B1D21;
+    p{
+        color: #adfff7
+    }
+    header{
+        h1{
+            color: #96E8DE;
+        }
+
+        h3{
+            color: #96E8DE;
+        }
+    }
+    
+    .content{
+        .block_txt{
+            background-color: #35726A;
+            .block_txt-textarea{
+                background-color: #35726A;
+                color: #96E8DE;
+            }
+            .block_txt-textarea::placeholder{
+                color: #96E8DE;
+            }
+        }
+        .block_gestures{
+            background-color: #60A79F;
+            .block_gestures-textarea
+            {
+                background-color: #60A79F;
+                color: #96E8DE;
+                
+            }
+            .block_gestures-textarea::placeholder{
+                color: #96E8DE;
+            }
+        }
+    }
+
+    footer{
+        background-color: #102A31;
+    }
+}
+#reversed
+{
+    .content{
+        flex-direction: row-reverse;
+    }
+    @media (max-width: 620px) {
+        .content{
+            flex-direction: column-reverse;
+            .block_txt{margin-top: 21px;}
+        }   .block_gestures{margin-bottom: 21px;}
+    }
+}
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10% 0 10%;
+    align-items: center;
+    
+    h1{
+        font-family: 'Russo One';
+        font-weight: 400;
+    }
+
+    h3{
+        font-family: 'Saira';
+        font-weight: 400;
+    }
+    @media (max-width: 620px) {
+        justify-content: center;
+        h3{
+            display: none;
+        }
+    }
+
+}
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 1 auto;
+
+    .block_txt{
+        display: flex;
+        background-color: #2A464E;
+        border-radius: 25px;
+        width: 760px;
+        height: 400px;
+        .block_txt-textarea{
+            width: 76%;
+            background-color: #2A464E;
+            color: #FFFFFF4D;
+            margin: 45px 0 0 20px;
+            border: 0;
+            font-size: 18px;
+            border-radius: 25px;
+            padding: 9px;
+        }
+        .block_txt-p
+        {
+            display: none;
+        }
+        .block_txt-textarea::placeholder{
+            color: #FFFFFF4D;
+        }
+        img
+        {
+            margin: 36px 0 0 28px;
+            width: 100px;
+            height: 100px;
+        }
+        p{
+            padding: 9px;
+            margin: 45px 0 0 20px;
+            color: #FFFFFF4D;
+            outline: none;
+            font-size: 18px;
+        }
+    }
+
+    .replace:hover
+    {
+        cursor: pointer;
+    }
+    .replace
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+   
+    .block_gestures{
+        display: flex;
+        background-color: #657A87;
+        border-radius: 25px;
+        width: 760px;
+        height: 400px;
+        .block_gestures-textarea{
+            
+            width: 76%;
+            background-color: #657A87;
+            color: #FFFFFF4D;
+            margin: 45px 0 0 20px;
+            border: 0;
+            font-size: 18px;
+            border-radius: 25px;
+            padding: 9px;
+        }
+        .block_gestures-textarea::placeholder{
+            color: #FFFFFF4D;
+        }
+        img
+        {
+            margin: 36px 0 0 28px;
+            width: 100px;
+            height: 100px;
+        }
+        p{
+            margin: 45px 0 0 20px;
+            color: #FFFFFF4D;
+            outline: none;
+            padding: 9px;
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 620px){
+        flex-direction: column;
+        justify-content: center;
+        
+        img{
+            width: 65px;
+            height: 65px;
+        }
+
+        .block_txt{
+            max-width: 90%;
+            max-height: 200px;
+            margin-bottom: 25px;
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+        .block_gestures{
+            max-width: 90%;
+            max-height: 200px;
+            margin-top: 25px;
+            
+            img{
+                width: 60px;
+                height: 60px;
+            }
+        }
+       
+    }
+}
+
+
+footer{
+    display: flex;
+    background-color: #0B1D21;
+    justify-content: space-evenly;
+    
+    img{
+        width: 50px;
+        height: 50px;
+    }   
+}
+@media (min-width: 620px) {
+    footer{
+        display: none;
+    }
+}

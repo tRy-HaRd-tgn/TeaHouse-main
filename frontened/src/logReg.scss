@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; // Yeah, yeah everybody write about it
+}
+.disable 
+{
+    display:  none !important;
+    transition: 0.5s;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+input::placeholder
+{
+    opacity: 0.7;
+}
+a, u 
+{
+    text-decoration: none;
+}
+
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_body
+{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.container_body_div_img
+{
+    display: flex;
+    justify-content: center;
+}
+.container_body_img
+{
+    margin-top: 25px;
+    max-width: 137px;
+    max-height: 77px;
+    
+    margin-bottom: 120px;
+}
+.container_form
+{
+    display: flex;
+    flex-direction: column;
+}
+.container_form_input
+{
+    padding-left: 15px;
+    min-width: 500px;
+    min-height: 60px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 1px solid #657A87;
+
+    color:  black;
+    font-family: "Istok Web";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.container_form_div_btn
+{
+    display: flex;
+    justify-content: center;
+}
+.container_form_btn
+{
+    width: 175px;
+    height: 60px;
+    margin-top: 45px;
+    padding: 10px 12px 10px 13px;
+    border-radius: 15px;
+    background: #184048; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    
+    text-align: center;
+    font-family: "Istok Web";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    cursor: pointer;
+}
+
+.container_body_footer
+{
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0B1D21;
+
+    text-align: center;
+    font-family: "Istok Web";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.container_footer_a
+{
+    color: grey;
+    transform: translate(0,1px);
+    margin-left: 5px;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+@media (max-width: 550px)
+{
+    .container_form_input
+    {
+        
+        min-width: auto;
+    }
+    .modal_form_input
+    {
+        height: 3vh !important;
+    }
+}
+@media(max-height: 1000px)
+{
+    .modal_btn
+    {
+        height: 9vh !important;
+    }
+}
+
+.modal_container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.modal_p
+{
+    display: flex;
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem);
+    align-items: center;
+    color: #000;
+    text-align: center;
+    font-family: "Istok Web";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 24px */
+    text-transform: lowercase;
+}
+
+.modal_form
+{
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.modal_form_input:not(:last-child)
+{
+    margin-right: auto;
+}
+
+.modal_form_input
+{
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem);
+    width: 4vw;
+    height: 6vh;
+    border-radius: 15px;
+    text-align: center;
+}
+.modal_p_grey
+{
+    font-size: calc( (100vw - 30rem)/50 * 0.5 + 1rem);
+    color: rgba(101, 122, 135, 0.40);
+    text-align: center;
+    font-family: "Istok Web";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    margin-top: 0;
+    transition: 0.5s;
+}
+
+.timer
+{
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+}
+.modal_div
+{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    transition: 0.5s;
+}
+.modal_btn
+{
+    width: 25vw;
+    height: 4vh;
+    border-radius: 10px;
+    border: 1px solid #BBB;
+    background: #657A87;
+    transition: 0.5s;
+}
+.modal_btn_p
+{
+    color: #FFF;
+    text-align: center;
+    font-family: "Istok Web";
+    font-size: calc( (100vw - 60rem)/50 * 0.5 + 1rem);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: lowercase;
+    margin: 0;
+    transition: 0.5s;
+}
