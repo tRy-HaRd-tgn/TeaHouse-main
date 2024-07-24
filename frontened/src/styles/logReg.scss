@@ -118,9 +118,6 @@ u {
   .container_form_input {
     min-width: auto;
   }
-  .modal_form_input {
-    height: 3vh !important;
-  }
 }
 @media (max-height: 1000px) {
   .modal_btn {
@@ -151,17 +148,6 @@ u {
   margin-bottom: 25px;
 }
 
-.modal_form_input:not(:last-child) {
-  margin-right: auto;
-}
-
-.modal_form_input {
-  font-size: calc((100vw - 30rem) / 50 * 0.5 + 1rem);
-  width: 4vw;
-  height: 6vh;
-  border-radius: 15px;
-  text-align: center;
-}
 .modal_p_grey {
   font-size: calc((100vw - 30rem) / 50 * 0.5 + 1rem);
   color: rgba(101, 122, 135, 0.4);
