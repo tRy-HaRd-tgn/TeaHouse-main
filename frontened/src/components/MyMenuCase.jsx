@@ -1,4 +1,4 @@
-export default function MyMenuCase({id,src,alt,children,...props}) {
+export default function MyMenuCase({id,src,alt,children,color,style,...props}) {
   return (
     <>
       <img
@@ -7,7 +7,7 @@ export default function MyMenuCase({id,src,alt,children,...props}) {
         className="Main_App_leftColumn_block_img"
         alt={alt}
       ></img>
-      <p className="Main_App_leftColumn_p">{children}</p>
+      <p className={style}>{children}</p>
     </>
   );
 }

@@ -3,6 +3,10 @@ import React from "react";
 import MyMenuCase from "../components/MyMenuCase";
 
 function Main_App() {
+  let style = {
+    normal: "Main_App_leftColumn_p",
+    color: "Main_App_leftColumn_p color",
+  };
   const [themeF, setColorF] = useState(0);
   const [themeS, setColorS] = useState(0);
   const [themeT, setColorT] = useState(0);
@@ -34,11 +38,21 @@ function Main_App() {
             }}
           >
             {themeF === 0 ? (
-              <MyMenuCase id="hand" src="/img/hand normal.svg" alt="">
+              <MyMenuCase
+                id="hand"
+                src="/img/hand normal.svg"
+                style={style.normal}
+                alt=""
+              >
                 жесты→текст
               </MyMenuCase>
             ) : (
-              <MyMenuCase id="hand" src="/img/hand color.svg" alt="">
+              <MyMenuCase
+                id="hand"
+                src="/img/hand color.svg"
+                style={style.color}
+                alt=""
+              >
                 жесты→текст
               </MyMenuCase>
             )}
@@ -53,25 +67,23 @@ function Main_App() {
             }}
           >
             {themeS === 0 ? (
-              <>
-                <img
-                  id="A"
-                  src="/img/A normal.svg"
-                  className="Main_App_leftColumn_block_img"
-                  alt=""
-                ></img>
-                <p className="Main_App_leftColumn_p">текст→жесты</p>
-              </>
+              <MyMenuCase
+                id="A"
+                src="/img/A normal.svg"
+                style={style.normal}
+                alt=""
+              >
+                текст→жесты
+              </MyMenuCase>
             ) : (
-              <>
-                <img
-                  id="A"
-                  src="/img/A color.svg"
-                  className="Main_App_leftColumn_block_img"
-                  alt=""
-                ></img>
-                <p className="Main_App_leftColumn_p color">текст→жесты</p>
-              </>
+              <MyMenuCase
+                id="A"
+                src="/img/A color.svg"
+                style={style.color}
+                alt=""
+              >
+                текст→жесты
+              </MyMenuCase>
             )}
           </div>
           <div
@@ -84,25 +96,23 @@ function Main_App() {
             }}
           >
             {themeT === 0 ? (
-              <>
-                <img
-                  id="like"
-                  src="/img/like normal.svg"
-                  className="Main_App_leftColumn_block_img"
-                  alt=""
-                ></img>
-                <p className="Main_App_leftColumn_p">избранное</p>
-              </>
+              <MyMenuCase
+                id="like"
+                src="/img/like normal.svg"
+                style={style.normal}
+                alt=""
+              >
+                избранное
+              </MyMenuCase>
             ) : (
-              <>
-                <img
-                  id="like"
-                  src="/img/like color.svg"
-                  className="Main_App_leftColumn_block_img"
-                  alt=""
-                ></img>
-                <p className="Main_App_leftColumn_p color">избранное</p>
-              </>
+              <MyMenuCase
+                id="like"
+                src="/img/like color.svg"
+                style={style.color}
+                alt=""
+              >
+                избранное
+              </MyMenuCase>
             )}
           </div>
           <div
@@ -115,25 +125,23 @@ function Main_App() {
             }}
           >
             {themeFo === 0 ? (
-              <>
-                <img
-                  id="news"
-                  src="/img/news normal.svg"
-                  className="Main_App_leftColumn_block_img"
-                  alt=""
-                ></img>
-                <p className="Main_App_leftColumn_p">статьи</p>
-              </>
+              <MyMenuCase
+                id="news"
+                src="/img/news normal.svg"
+                style={style.normal}
+                alt=""
+              >
+                статьи
+              </MyMenuCase>
             ) : (
-              <>
-                <img
-                  id="news"
-                  src="/img/news color.svg"
-                  className="Main_App_leftColumn_block_img"
-                  alt=""
-                />
-                <p className="Main_App_leftColumn_p color">статьи</p>
-              </>
+              <MyMenuCase
+                id="news"
+                src="/img/news color.svg"
+                style={style.color}
+                alt=""
+              >
+                статьи
+              </MyMenuCase>
             )}
           </div>
         </div>
@@ -144,29 +152,25 @@ function Main_App() {
           <>
             <div id="lF" className="Main_App_rightColumn_block_gestureToText">
               {stopper === 0 ? (
-                <>
-                  <div className="Main_App_rightColumn_block_gestureToText_obligation">
-                    <img
-                      className="Main_App_rightColumn_block_gestureToText_obligation_img"
-                      src="http://127.0.0.1:8000/mask_feed"
-                      alt=""
-                    />
-                  </div>
-                </>
+                <div className="Main_App_rightColumn_block_gestureToText_obligation">
+                  <img
+                    className="Main_App_rightColumn_block_gestureToText_obligation_img"
+                    src="http://127.0.0.1:8000/mask_feed"
+                    alt=""
+                  />
+                </div>
               ) : (
                 <></>
               )}
               {switcher === 0 ? (
-                <>
-                  <button
-                    className="Main_App_rightColumn_block_gestureToText_btn"
-                    onClick={() => {
-                      setRecord(1);
-                    }}
-                  >
-                    начать запись
-                  </button>
-                </>
+                <button
+                  className="Main_App_rightColumn_block_gestureToText_btn"
+                  onClick={() => {
+                    setRecord(1);
+                  }}
+                >
+                  начать запись
+                </button>
               ) : (
                 <></>
               )}
@@ -201,24 +205,22 @@ function Main_App() {
               <></>
             )}
             {stopper === 1 ? (
-              <>
-                <div className="Main_App_rightColumn_block_gestureToText_result">
-                  <div className="Main_App_rightColumn_block_gestureToText_result_p">
-                    <p>переведенный текст</p>
-                    {/* тут будет переведенный текст */}
-                  </div>
-
-                  <button
-                    className="Main_App_rightColumn_block_textToGesture_form_btn"
-                    onClick={() => {
-                      stopRecord(0);
-                      setRecord(0);
-                    }}
-                  >
-                    <img className="reload" src="/img/reload.svg" alt="" />
-                  </button>
+              <div className="Main_App_rightColumn_block_gestureToText_result">
+                <div className="Main_App_rightColumn_block_gestureToText_result_p">
+                  <p>переведенный текст</p>
+                  {/* тут будет переведенный текст */}
                 </div>
-              </>
+
+                <button
+                  className="Main_App_rightColumn_block_textToGesture_form_btn"
+                  onClick={() => {
+                    stopRecord(0);
+                    setRecord(0);
+                  }}
+                >
+                  <img className="reload" src="/img/reload.svg" alt="" />
+                </button>
+              </div>
             ) : (
               <></>
             )}
@@ -229,62 +231,51 @@ function Main_App() {
         {themeS === 1 ? (
           <>
             {sender === 0 ? (
-              <>
-                <div
-                  id="lS"
-                  className="Main_App_rightColumn_block_textToGesture"
-                >
-                  <div className="Main_App_rightColumn_block_textToGesture_div_textarea">
-                    <form className="Main_App_rightColumn_block_textToGesture_form">
-                      <textarea
-                        className="Main_App_rightColumn_block_textToGesture_form_textarea"
-                        placeholder="введите текст..."
-                      />
-                      <button
-                        className="Main_App_rightColumn_block_textToGesture_form_btn"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          sendForm(1);
-                        }}
-                      >
-                        Далее
-                      </button>
-                    </form>
-                  </div>
+              <div id="lS" className="Main_App_rightColumn_block_textToGesture">
+                <div className="Main_App_rightColumn_block_textToGesture_div_textarea">
+                  <form className="Main_App_rightColumn_block_textToGesture_form">
+                    <textarea
+                      className="Main_App_rightColumn_block_textToGesture_form_textarea"
+                      placeholder="введите текст..."
+                    />
+                    <button
+                      className="Main_App_rightColumn_block_textToGesture_form_btn"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        sendForm(1);
+                      }}
+                    >
+                      Далее
+                    </button>
+                  </form>
                 </div>
-              </>
+              </div>
             ) : (
-              <>
-                <div className="Main_App_rightColumn_block_textToGesture_result">
-                  <div className="Main_App_rightColumn_block_gestureToText_result_div">
-                    {/* тут будут жесты */}
-                  </div>
-                  <button
-                    className="Main_App_rightColumn_block_gestureToText_form_btn"
-                    onClick={() => {
-                      sendForm(0);
-                    }}
-                  >
-                    <img className="reload" src="/img/reload.svg" alt="" />
-                  </button>
+              <div className="Main_App_rightColumn_block_textToGesture_result">
+                <div className="Main_App_rightColumn_block_gestureToText_result_div">
+                  {/* тут будут жесты */}
                 </div>
-              </>
+                <button
+                  className="Main_App_rightColumn_block_gestureToText_form_btn"
+                  onClick={() => {
+                    sendForm(0);
+                  }}
+                >
+                  <img className="reload" src="/img/reload.svg" alt="" />
+                </button>
+              </div>
             )}
           </>
         ) : (
           <></>
         )}
         {themeT === 1 ? (
-          <>
-            <div id="lT" className="Main_App_rightColumn_block_favorites"></div>
-          </>
+          <div id="lT" className="Main_App_rightColumn_block_favorites"></div>
         ) : (
           <></>
         )}
         {themeFo === 1 ? (
-          <>
-            <div id="lFo" className="Main_App_rightColumn_block_articles"></div>
-          </>
+          <div id="lFo" className="Main_App_rightColumn_block_articles"></div>
         ) : (
           <></>
         )}
