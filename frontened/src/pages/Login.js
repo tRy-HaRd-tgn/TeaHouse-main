@@ -1,20 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import MyLogo from "../components/logo/MyLogo";
+import MyLogo from "../components/MyLogo";
 import MyInput from "../ui/input/MyInput";
 import MyButton from "../ui/button/MyButton";
 function Login() {
   return (
     <div className="container">
       <body className="container_body">
-        <MyLogo></MyLogo>
+        <MyLogo />
         <form action="" className="container_form">
-          <MyInput
-            id="email"
-            placeholder="Эл. почта"
-            type="email"
-            required
-          ></MyInput>
+          <MyInput id="email" placeholder="Эл. почта" type="email" required />
           <div className="container_form_div_btn">
             <MyButton type="submit">Вход</MyButton>
           </div>
