@@ -8,12 +8,12 @@ import Personal_account from "./pages/Personal_account";
 import NotFoundPage from "./pages/NotFoundPage";
 import Main_App from "./pages/Main_App";
 
-import "./index.scss";
-import "./logReg.scss";
-import "./ErrorPage.scss";
-import "./PersonalAccount.scss";
-import "./Main_App.scss";
-import "./Modal.scss";
+import "./styles/index.scss";
+import "./styles/logReg.scss";
+import "./styles/ErrorPage.scss";
+import "./styles/PersonalAccount.scss";
+import "./styles/Main_App.scss";
+import "./styles/Modal.scss";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 

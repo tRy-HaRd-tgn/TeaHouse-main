@@ -1,0 +1,15 @@
+@media (max-width: 550px) {
+  .modal_form_input {
+    height: 3vh !important;
+  }
+}
+.modal_form_input:not(:last-child) {
+  margin-right: auto;
+}
+.modal_form_input {
+    font-size: calc((100vw - 30rem) / 50 * 0.5 + 1rem);
+    width: 4vw;
+    height: 6vh;
+    border-radius: 15px;
+    text-align: center;
+  }
