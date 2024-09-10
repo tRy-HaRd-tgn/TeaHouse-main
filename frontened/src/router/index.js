@@ -2,7 +2,7 @@ import App from "../pages/App";
 import Login from "../pages/Login";
 import MainApp from "../pages/Main_App";
 import PersonalAccount from "../pages/Personal_account";
-import Register from "../pages/Register";
+import Register from "../pages/Register.jsx";
 export const privateRoutes = [
   { path: "/", component: <MainApp></MainApp>, exact: true },
   { path: "/app", component: <App></App>, exact: true },
