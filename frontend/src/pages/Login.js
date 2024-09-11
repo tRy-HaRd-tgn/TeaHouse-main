@@ -12,19 +12,17 @@ function Login() {
   const clickhandler = (e) => {
     setIsAuth(true);
     e.preventDefault();
-    localStorage.setItem("auth",true)
-    router('/')
+    localStorage.setItem("auth", true);
+    router("/");
   };
   return (
-    <div className="container">
-      <body className="container_body">
+    <body className="container">
+      <div className="container_body">
         <MyLogo />
         <form action="" onSubmit={clickhandler} className="container_form">
           <MyInput id="email" placeholder="Эл. почта" type="email" required />
           <div className="container_form_div_btn">
-            <MyButton type="submit" >
-              Вход
-            </MyButton>
+            <MyButton type="submit">Вход</MyButton>
           </div>
         </form>
         <div className="container_body_footer">
@@ -33,8 +31,8 @@ function Login() {
             Register
           </Link>
         </div>
-      </body>
-    </div>
+      </div>
+    </body>
   );
 }
 export default Login;

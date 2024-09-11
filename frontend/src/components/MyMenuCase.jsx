@@ -17,7 +17,9 @@ export default function MyMenuCase({
         alt={alt}
         style={{ marginRight: "15px" }}
       />
-      <p {...props} className={style}>{children}</p>
+      <p {...props} className={style}>
+        {children}
+      </p>
     </>
   );
 }

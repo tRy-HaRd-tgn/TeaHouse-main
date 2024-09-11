@@ -1,20 +1,22 @@
-import WebcamComponent from '../webcamera';
-import React, { useState } from 'react';
+import WebcamComponent from "../webcamera";
+import React, { useState } from "react";
 
 function App() {
-  const [theme, setTheme] = useState('light'); // состояние для смены темы
-  const [stateArray, replaceContent] = useState('default'); // состояние  для свапа двух форм
+  const [theme, setTheme] = useState("light"); // состояние для смены темы
+  const [stateArray, replaceContent] = useState("default"); // состояние  для свапа двух форм
   const switchTheme = () => {
-    setTheme((current) => (current === 'light' ? 'dark' : 'light'));
+    setTheme((current) => (current === "light" ? "dark" : "light"));
   }; // переключатель темы
 
   const HandleClick = () => {
-    console.log('clicked');
-    replaceContent((current) => (current === 'default' ? 'reversed' : 'default'));
+    console.log("clicked");
+    replaceContent((current) =>
+      current === "default" ? "reversed" : "default"
+    );
   }; // свапер форм
 
   return (
-    <div id={theme}>  
+    <div id={theme}>
       <div className="wrapper" id={stateArray}>
         <header>
           <h1>Handshake!</h1>
@@ -37,7 +39,7 @@ function App() {
           </div>
 
           <div className="replace" onClick={HandleClick}>
-            {theme === 'light' ? (
+            {theme === "light" ? (
               <img src="/img/change-circle.svg" />
             ) : (
               <img src="/img/change-circle-dark.svg" />
@@ -61,7 +63,11 @@ function App() {
 
         <footer>
           <div onClick={switchTheme}>
-            {theme === 'light' ? <img src="/img/moon.svg" /> : <img src="/img/light-theme.svg" />}
+            {theme === "light" ? (
+              <img src="/img/moon.svg" />
+            ) : (
+              <img src="/img/light-theme.svg" />
+            )}
           </div>
           <img src="/img/person.svg" />
           <img src="/img/gear.svg" />
@@ -69,7 +75,6 @@ function App() {
       </div>
     </div>
   );
-  
 }
 
 export default App;
