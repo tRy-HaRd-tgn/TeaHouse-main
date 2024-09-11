@@ -8,15 +8,17 @@ const AppRouter = () => {
   return (
     <Routes>
       {isAuth
-        ? privateRoutes.map((route) => (
+        ? privateRoutes.map((route, index) => (
             <Route
+              key={index}
               element={route.component}
               path={route.path}
               exact={route.exact}
             />
           ))
-        : publicRoutes.map((route) => (
+        : publicRoutes.map((route,index) => (
             <Route
+              key={index}
               element={route.component}
               path={route.path}
               exact={route.exact}
